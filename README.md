@@ -38,30 +38,30 @@
    - SPP layers capture information at multiple scales, improving object detection by handling various object sizes.
 
 **Residual Networks (ResNets) and Skip Connections:**
-    - Residual connections facilitate gradient flow and alleviate vanishing gradient issues.
-    - Skip connections help build deeper networks without suffering from degradation problems.
+   - Residual connections facilitate gradient flow and alleviate vanishing gradient issues.
+   - Skip connections help build deeper networks without suffering from degradation problems.
 
 **Topological and Geometric Insights:**
-    - Understand the topology of the data to guide architecture design.
-    - Geometric invariance might not always be desirable, especially in tasks like segmentation.
+   - Understand the topology of the data to guide architecture design.
+   - Geometric invariance might not always be desirable, especially in tasks like segmentation.
 
 **Backpropagation and Optimization:**
-    - Use activation functions (ReLU, Leaky ReLU) to avoid vanishing gradients and improve convergence.
-    - Employ optimization techniques like Adam, RMSProp, or SGD with momentum for faster convergence.
-    - Learning rate scheduling can help in balancing exploration and exploitation during training.
+   - Use activation functions (ReLU, Leaky ReLU) to avoid vanishing gradients and improve convergence.
+   - Employ optimization techniques like Adam, RMSProp, or SGD with momentum for faster convergence.
+   - Learning rate scheduling can help in balancing exploration and exploitation during training.
 
 **Regularization and Dropout:**
-    - Regularization techniques like L2 regularization, dropout, and batch normalization help prevent overfitting.
-    - Apply dropout in moderation to prevent underfitting.
+   - Regularization techniques like L2 regularization, dropout, and batch normalization help prevent overfitting.
+   - Apply dropout in moderation to prevent underfitting.
 
  **Hyperparameter Tuning:**
-    - Experiment with learning rates, batch sizes, and network architectures.
-    - Utilize techniques like random search or Bayesian optimization for efficient hyperparameter tuning.
+   - Experiment with learning rates, batch sizes, and network architectures.
+   - Utilize techniques like random search or Bayesian optimization for efficient hyperparameter tuning.
 
  **Data Augmentation:**
-    - Apply data augmentation techniques (rotation, cropping, flipping) to increase the diversity of the training data.
-    - Augmentation helps improve model generalization.
+   - Apply data augmentation techniques (rotation, cropping, flipping) to increase the diversity of the training data.
+   - Augmentation helps improve model generalization.
 
  **Transfer Learning and Pretrained Models:**
-    - Utilize pretrained models and fine-tuning to leverage features learned on large datasets.
-    - Adapt pretrained models to your specific task to improve convergence and performance.
+   - Utilize pretrained models and fine-tuning to leverage features learned on large datasets.
+   - Adapt pretrained models to your specific task to improve convergence and performance.
