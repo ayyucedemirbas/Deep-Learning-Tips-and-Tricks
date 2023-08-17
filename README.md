@@ -11,6 +11,27 @@
    - Smaller filter sizes (3x3) with multiple layers can achieve similar receptive fields with fewer parameters.
    - Padding helps retain spatial dimensions and is essential for preserving information at the edges.
 
+**Smaller or Larger Kernel Size in CNNs:**
+
+- Convolution layers with 5x5 or 7x7 kernels tend to increase receptive field faster than their 3x3 versions. However,
+  many state of the art architectures prefer to use 3x3 convolution layers. To reach enough receptive field compared to
+  larger kernels, they generally deploy multiple layers. In the below, you can see the receptive field covered by convolution
+  layers with different kernel sizes
+
+  Receptive Field Comparison:
+
+  * 2 consecutive 3x3 conv layers = 1 5x5 conv layer
+  * 3 consecutive 3x3 conv layers = 1 7x7 Conv Layer
+
+  In fact, using multiple conv layers with small kernel instead of single layer with larger kernel introduces some advantages:
+
+  * Going through multiple non-linear activations instead of single one, this makes decision function in the model more
+    discriminative
+
+  * Number of parameters and computations would be decreased in small kernels. Working with larger kernels especially in
+    3D domain like medical imaging is a bad decision. Small kernels are highly recommended at this point.
+  
+
 **Receptive Field and Layer Depth:**
    - Decide the number of layers based on the problem's complexity and desired receptive field.
    - Receptive field ratio guides the depth of the network, balancing between local and global features.
