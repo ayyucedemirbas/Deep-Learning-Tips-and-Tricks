@@ -18,12 +18,11 @@
   larger kernels, they generally deploy multiple layers. In the below, you can see the receptive field covered by convolution
   layers with different kernel sizes
 
-  Receptive Field Comparison:
-
+- Receptive Field Comparison:
   * 2 consecutive 3x3 conv layers = 1 5x5 conv layer
   * 3 consecutive 3x3 conv layers = 1 7x7 Conv Layer
 
-  In fact, using multiple conv layers with small kernel instead of single layer with larger kernel introduces some advantages:
+- In fact, using multiple conv layers with small kernel instead of single layer with larger kernel introduces some advantages:
 
   * Going through multiple non-linear activations instead of single one, this makes decision function in the model more
     discriminative
