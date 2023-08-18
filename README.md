@@ -36,11 +36,13 @@
    - Receptive field ratio guides the depth of the network, balancing between local and global features.
 
 **Striding and Pooling:**
-   - Striding and pooling layers reduce spatial dimensions, increasing computation efficiency.
-   - To maintain fine-grained information, consider skip connections to handle the resolution reduction.
+   - Strided convolution and pooling operations help to increase receptive field, thereby learning long-range dependencies.
+   - While doing these, they also reduce spatial dimension of input. In that way, computational cost would be decreased.
+   - However, reduced feature maps start to loose fine-grained information (low-level details) like boundaries and edges of organs.
+     This decreases the quality of segmentation; hence, using skip connection can be good alternative to handle this problem.
 
 **Atrous (Dilated) Convolutions:**
-   - Atrous convolutions increase receptive fields without reducing resolution, suitable for retaining fine-grained details in segmentation tasks.
+   - Atrous convolution is capable of increasing receptive field of feature maps without reducing resolution, so it is suitable for           retaining fine-grained details in segmentation tasks.
 
 **Pooling and Segmentation:**
    - Pooling extracts geometrically invariant features but might affect segmentation tasks negatively.
