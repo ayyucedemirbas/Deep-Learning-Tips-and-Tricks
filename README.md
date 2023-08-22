@@ -47,7 +47,7 @@
    - In this scheme, input image is convolved with two parallel convolution pathways just like in siamese architectures.
    - While the first pathway operates on input image in normal resolution, which extracts detailed local appearance based features,
      the second branch processes same image in smaller size to come up with high level, more generalized features.
-   - Reference Paper: "Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation"
+   - *Reference Paper:* "Efficient multi-scale 3D CNN with fully connected CRF for accurate brain lesion segmentation"
 
 **Atrous (Dilated) Convolutions:**
    - Atrous convolution is capable of increasing receptive field of feature maps without reducing resolution, so it is suitable for           retaining fine-grained details in segmentation tasks.
