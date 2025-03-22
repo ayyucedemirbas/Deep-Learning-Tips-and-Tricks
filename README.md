@@ -277,7 +277,6 @@
   - **Dynamic input complexity:** Tasks where input varies in difficulty (e.g., medical imaging with variable lesion sizes).  
   - **Real-time processing:** Autonomous systems, low-latency video analysis.  
 
----
 
 **6. Strengths and Weaknesses**  
 | Aspect                | Transformers                                  | Mamba                                      |  
